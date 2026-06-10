@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Predictor</title>
+<link rel="stylesheet" href="predictor.css">
+</head>
+<body>
 
+<nav>
+<a href="index.html">Home</a>
+</nav>
+
+<div class="container">
+
+<h1>Traffic Prediction</h1>
+
+<input type="text" id="location" placeholder="Location">
+
+<select id="day">
+<option>Monday</option>
+<option>Tuesday</option>
+<option>Wednesday</option>
+<option>Thursday</option>
+<option>Friday</option>
+<option>Saturday</option>
+<option>Sunday</option>
+</select>
+
+<input type="time" id="time">
+
+<select id="weather">
+<option>Sunny</option>
+<option>Cloudy</option>
+<option>Rainy</option>
+</select>
+
+<button onclick="predictTraffic()">Predict</button>
+
+<div id="result"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
