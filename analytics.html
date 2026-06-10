@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Analytics</title>
+
+<link rel="stylesheet" href="analytics.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="predictor.html">Predictor</a>
+<a href="map.html">Map</a>
+</nav>
+
+<h1>Traffic Analytics</h1>
+
+<div class="stats">
+
+<div class="card">
+<h3>Accuracy</h3>
+<p>92%</p>
+</div>
+
+<div class="card">
+<h3>Precision</h3>
+<p>89%</p>
+</div>
+
+<div class="card">
+<h3>Recall</h3>
+<p>90%</p>
+</div>
+
+</div>
+
+<canvas id="trafficChart"></canvas>
+
+<script>
+
+const ctx =
+document.getElementById('trafficChart');
+
+new Chart(ctx,{
+type:'bar',
+
+data:{
+labels:[
+'Mon',
+'Tue',
+'Wed',
+'Thu',
+'Fri',
+'Sat',
+'Sun'
+],
+
+datasets:[{
+label:'Traffic Density %',
+data:[80,60,75,65,90,40,35]
+}]
+}
+});
+
+</script>
+
+</body>
+</html>
